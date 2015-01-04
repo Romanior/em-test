@@ -1,0 +1,28 @@
+/********************************************************
+
+			top application toolbar
+
+********************************************************/
+
+.toolbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10000;
+	opacity: .95;
+	background: $color-primary;
+	padding: $block-padding;
+	color: #333;
+	border-bottom: 1px solid #eee;
+	height: $toolbar-height;
+	box-sizing: border-box;
+}
+
+.toolbar__title {
+	color: #fff;
+	font-size: 1em;
+	font-weight: normal;
+	line-height: 1;
+	margin: 0;
+}

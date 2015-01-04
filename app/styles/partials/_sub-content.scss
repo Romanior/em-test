@@ -1,0 +1,20 @@
+/********************************************************
+
+			sub-content area, e.g. filter
+
+********************************************************/
+.sub-content{
+	position: fixed;
+	width: 100%;
+	max-width: $sub-content-width;
+	top: $toolbar-height;
+	bottom: 0;
+	left: 0;
+	background: #f4f4f4;
+	border-right: #eee;
+	overflow: auto;
+	height: 100%;
+	z-index: 1;
+	box-sizing: border-box;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}

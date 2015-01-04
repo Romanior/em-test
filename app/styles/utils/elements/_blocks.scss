@@ -1,0 +1,16 @@
+/********************************************************
+
+			blocks
+
+********************************************************/
+
+.block{
+	padding: $block-padding;
+	margin-bottom: $block-marging;
+}
+
+.block__title{
+	font-size: .65em;
+	line-height: 1;
+	margin: 0;
+}

@@ -1,0 +1,49 @@
+{{!
+
+  filter area
+
+}}
+
+<div class="sub-content">
+  <div class="block">
+    <input type="search" class="form-control" results=5 autosave="This week" name=yourSearch autofocus=true >
+  </div>
+  <div class="block">
+    <h3 class="block__title">Date Range</h3>
+
+    <ul class="response-items">
+      <li class="response-items__item">
+
+        {{input
+          classBinding="isSelectOne:response-items__input--radio :response-items__input"
+          type="checkbox"
+          name="response"
+          checked=response.isChecked
+        }}
+
+        <label
+          {{bind-attr class="
+        response.isCorrect:response-items__label--correct
+        response.isNotCorrect:response-items__label--error
+        response.isChecked:response-items__label--checked
+        :response-items__label"
+          }}>
+
+          <span class="response-items__text">
+            {{{response.title}}}
+          </span>
+        </label>
+
+      </li>
+      <li>
+
+      </li>
+      <li>
+
+      </li>
+      <li>
+
+      </li>
+    </ul>
+  </div>
+</div>
