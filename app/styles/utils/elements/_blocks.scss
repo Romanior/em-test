@@ -5,12 +5,26 @@
 ********************************************************/
 
 .block{
-	padding: $block-padding;
-	margin-bottom: $block-marging;
+	margin-bottom: $block-margin;
+}
+
+.block__header {
+  padding: $block-padding/2 $block-padding;
+  margin-bottom: 5px;
 }
 
 .block__title{
-	font-size: .65em;
-	line-height: 1;
-	margin: 0;
+  font-size: 1.1em;
+  font-weight: bold;
+  line-height: 1;
+  margin: 0;
+}
+
+.block-alone{
+  margin-bottom: 5px;
+  padding: $block-padding;
+}
+
+.block--highlighted{
+  background: $color-highlight;
 }

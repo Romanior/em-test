@@ -3,18 +3,18 @@
 			sub-content area, e.g. filter
 
 ********************************************************/
-.sub-content{
-	position: fixed;
-	width: 100%;
-	max-width: $sub-content-width;
-	top: $toolbar-height;
-	bottom: 0;
-	left: 0;
-	background: #f4f4f4;
-	border-right: #eee;
-	overflow: auto;
-	height: 100%;
-	z-index: 1;
-	box-sizing: border-box;
-	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+
+.sub-content {
+  background: #f6f6f6;
+  border-right: 1px solid #eee;
+  bottom: 0;
+  box-sizing: border-box;
+  left: 0;
+  max-width: $sub-content-width;
+  overflow: auto;
+  padding-bottom: 30px;
+  position: fixed;
+  top: $toolbar-height;
+  width: 100%;
+  z-index: 1;
 }

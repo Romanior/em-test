@@ -1,0 +1,48 @@
+/********************************************************
+
+				      list of items to filter with
+
+********************************************************/
+
+.filter-list{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.filter-list__item{
+
+}
+
+.filter-list__label{
+  display: block;
+  padding: 0.6em $block-padding;
+  border-bottom: 1px solid #eee;
+  color: #666;
+  cursor: pointer;
+  &:hover{
+    background: rgba(255,255,255, 0.5);
+  }
+}
+
+.filter-list__text{
+  margin-left: 3px;
+}
+
+.filter-list__item__input--radio{
+  -webkit-appearance: radio;
+  -moz-appearance: radio;
+  appearance: radio;
+}
+
+.filter-list__label--checked,
+.filter-list__label--checked:hover{
+  background: $color-highlight;
+  color: #000;
+}
+
+.filter-list__sub{
+  float: right;
+  font-size: 0.8em;
+  color: #c6c6c6;
+}

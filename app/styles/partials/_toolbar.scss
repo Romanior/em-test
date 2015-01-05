@@ -5,23 +5,23 @@
 ********************************************************/
 
 .toolbar {
+	background-color: #2770A0;
+//	border-bottom: 1px solid #E5E5E5;
+	box-sizing: border-box;
+	color: #333;
+	height: $toolbar-height;
+  left: 0;
+  opacity: 0.9;
+	padding: $block-padding;
 	position: fixed;
 	top: 0;
-	left: 0;
 	width: 100%;
-	z-index: 10000;
-	opacity: .95;
-	background: $color-primary;
-	padding: $block-padding;
-	color: #333;
-	border-bottom: 1px solid #eee;
-	height: $toolbar-height;
-	box-sizing: border-box;
+  z-index: 10000;
 }
 
 .toolbar__title {
 	color: #fff;
-	font-size: 1em;
+	font-size: 1.4em;
 	font-weight: normal;
 	line-height: 1;
 	margin: 0;
