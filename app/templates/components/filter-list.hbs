@@ -1,0 +1,22 @@
+{{#each item in items}}
+  <li class="filter-list__item">
+    <label
+      {{bind-attr class="
+        item.isChecked:filter-list__label--checked
+        :filter-list__label"
+      }}>
+      <span class="filter-list__sub">{{item.doc_count}}</span>
+      {{input
+        classBinding="isSingleSelect:filter-list__item__input--radio :filter-list__item__input"
+        type="checkbox"
+        name=item.key
+        checked=item.isChecked
+      }}
+
+      <span class="filter-list__text">
+        {{item.key}}
+      </span>
+    </label>
+
+  </li>
+{{/each}}
