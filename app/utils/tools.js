@@ -2,10 +2,10 @@ import Activity from 'em-test/models/activity';
 import Ember from 'ember';
 
 export default {
-  loadModels: function(data, store){
+  loadModels: function(data){
     var activities = [];
 
-    data.hits.hits.forEach(function(item, index){
+    data.hits.hits.forEach(function(item){
       var i = item._source;
       i['id'] = item._id;
       activities.push(i);
@@ -22,8 +22,8 @@ export default {
 
     if(meta.buckets){
       return meta.buckets.map(function (item) {
-          return Ember.Object.create(item)
-      })
+          return Ember.Object.create(item);
+      });
     } else {
       return Ember.Object.create(meta);
     }

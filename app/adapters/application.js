@@ -7,10 +7,5 @@
 import DS from 'ember-data';
 
 export default DS.FixtureAdapter.extend({
-  latency: 1000,
-
-  ajax: function() {
-    return Ember.RSVP.Promise.cast()
-  }
-
+  latency: 1000
 });

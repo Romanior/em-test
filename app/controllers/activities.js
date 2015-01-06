@@ -53,12 +53,12 @@ export default Ember.ArrayController.extend({
 
     Ember.run.debounce(this, function () {
       if(descriptive) {
-        filtered = initModel.filter(function (item, index) {
-          return item.get('searchField').search(descriptive) != -1
+        filtered = initModel.filter(function (item) {
+          return item.get('searchField').search(descriptive) !== -1;
         });
-        ctrl.set('content', filtered)
+        ctrl.set('content', filtered);
       } else{
-        ctrl.set('content', initModel)
+        ctrl.set('content', initModel);
       }
       this.set('page', 1);
     }, 3000, true);

@@ -17,12 +17,12 @@ export default Ember.Route.extend({
       data = JSON.parse(data);
       route.set('meta', tools.extractMeta(data, 'activity_contact_types'));
       return tools.loadModels(data, store);
-    })
+    });
 
   },
 
   model: function(){
-    return this.store.find('activity')
+    return this.store.find('activity');
   },
 
   setupController: function (ctrl, model){
