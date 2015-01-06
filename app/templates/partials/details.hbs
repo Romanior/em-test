@@ -1,0 +1,12 @@
+<div class="block-alone">
+  <h1>{{contactType.name}}</h1>
+  <p>{{organization.name}}</p>
+  <h2>{{organizer.fullName}}</h2>
+  <p class="mini-p text-overflow">
+    {{#each topic in topics}}
+      <span>{{topic.name}} </span>
+    {{/each}}
+  </p>
+</div>
+
+{{#link-to 'activities' class="controls__btn controls__btn--close"}}×{{/link-to}}

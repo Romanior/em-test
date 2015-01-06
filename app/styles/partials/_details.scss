@@ -1,29 +1,23 @@
 /********************************************************
 
-			sub-content area, e.g. filter
+				    activity detail
 
 ********************************************************/
-
-.sub-content {
-  background: #f2f2f2;
-  border-right: 1px solid #eee;
-  bottom: 0;
-  box-sizing: border-box;
-  left: 0;
-  max-width: $sub-content-width;
-  overflow: auto;
-  padding-bottom: 30px;
+.details{
   position: fixed;
+  width: $details-width;
   top: $toolbar-height;
-  width: 100%;
-  z-index: 1;
+  left: 100%;
   -moz-transition: all $animation-length;
   -webkit-transition: all $animation-length;
   transition: all $animation-length;
+  height: 100%;
+  background: #f1f1f1;
+  z-index: 3;
 }
 
 .cnt-activate{
-  .sub-content{
-    left: -$sub-content-width;
+  .details{
+    left: 100 -$details-width;
   }
 }

@@ -10,14 +10,9 @@
   list-style: none;
 }
 
-.filter-list__item{
-
-}
-
 .filter-list__label{
   display: block;
-  padding: 0.6em $block-padding;
-  border-bottom: 1px solid #eee;
+  padding: 0.65em $block-padding;
   color: #666;
   cursor: pointer;
   &:hover{

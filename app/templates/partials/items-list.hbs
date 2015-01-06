@@ -1,12 +1,12 @@
 <ul class="list">
-{{#each act in activities}}
+{{#each act in paged}}
   <li class="list__item">
     {{#link-to 'activity' act.id class='list__active grid-g'}}
-      <div class="grid-1-3">
+      <div class="grid-2-5">
         <h1 class="list__title text-overflow">{{act.contactType.name}}</h1>
         <p class="mini-p text-overflow">{{act.organization.name}}</p>
       </div>
-      <div class="grid-2-3">
+      <div class="grid-3-5">
         <h2 class="list__title list__title--sub">{{act.organizer.fullName}}</h2>
         <p class="mini-p text-overflow">
         {{#each topic in act.topics}}
@@ -16,5 +16,10 @@
       </div>
     {{/link-to}}
   </li>
+{{else}}
+  <div class="def-alert block-alone">
+    <h3 class="def-alert__title">No Activities Found</h3>
+    <p>Use left tools to find items most relevant to you.</p>
+  </div>
 {{/each}}
 </ul>

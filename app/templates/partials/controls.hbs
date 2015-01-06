@@ -1,0 +1,18 @@
+<div class="controls">
+
+  <div class="controls__inner">
+
+    {{#if previousPage}}
+      {{#link-to (query-params page=previousPage) class="controls__btn controls__btn--up"}}<i></i>{{/link-to}}
+    {{else}}
+      <span class="controls__btn controls__btn--up controls__btn--disabled"><i></i></span>
+    {{/if}}
+
+    {{#if nextPage}}
+      {{#link-to (query-params page=nextPage) class="controls__btn controls__btn--down"}}<i></i>{{/link-to}}
+    {{else}}
+      <span class="controls__btn controls__btn--down controls__btn--disabled"><i></i></span>
+    {{/if}}
+
+  </div>
+</div>

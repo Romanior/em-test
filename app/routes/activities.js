@@ -1,6 +1,6 @@
 import Ember from 'ember';
 import request from 'ic-ajax';
-import tools from 'em-test/utils/json-process';
+import tools from 'em-test/utils/tools';
 
 export default Ember.Route.extend({
 

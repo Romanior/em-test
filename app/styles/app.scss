@@ -2,7 +2,6 @@
 
 
 
-
 /********************************************************
 
 			utils
@@ -15,6 +14,7 @@
 @import "utils/elements/blocks";
 @import "utils/elements/form-control";
 @import "utils/elements/list";
+@import "utils/elements/def-alert";
 
 
 
@@ -27,8 +27,8 @@
 @import "partials/toolbar";
 @import "partials/sub-content";
 @import "partials/content";
-
-
+@import "partials/controls";
+@import "partials/details";
 
 
 

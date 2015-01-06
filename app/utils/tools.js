@@ -29,9 +29,6 @@ export default {
     }
   },
 
-  // Helper computed property used by nextPage
-  // and previousPage.
-  // source http://jsbin.com/fayug/edit?html,js,output
   incrementPage: function(amt) {
     return Ember.computed('page', 'numPages', function() {
       var newPage = parseInt(this.get('page'), 10) + amt;

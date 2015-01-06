@@ -1,0 +1,81 @@
+/********************************************************
+
+             list controls
+
+********************************************************/
+
+.controls {
+  bottom: 0;
+  box-sizing: border-box;
+  max-width: $controls-width;
+  overflow: auto;
+  padding-bottom: 30px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.controls__inner {
+  left: 18px;
+  margin-top: -65px;
+  position: absolute;
+  top: 50%;
+}
+
+.controls__btn {
+  background: #F6F6F6;
+  cursor: pointer;
+  display: block;
+  height: 50px;
+  position: relative;
+  width: 50px;
+  &:hover {
+    background: #f8f8f8;
+  }
+  > i {
+    border-left: 8px solid rgba(0, 0, 0, 0);
+    border-right: 8px solid rgba(0, 0, 0, 0);
+    border-top: 8px solid $color-primary;
+    height: 0;
+    left: 50%;
+    margin-left: -8px;
+    margin-top: -4px;
+    position: absolute;
+    top: 50%;
+    width: 0;
+  }
+}
+
+.controls__btn--close {
+  color: #3C7DA8;
+  font-size: 26px;
+  line-height: 48px;
+  position: absolute;
+  right: 5px;
+  text-align: center;
+  text-decoration: none;
+  top: 40px;
+  z-index: 10000;
+}
+
+.controls__btn--up {
+  border-bottom: 1px solid #ececec;
+}
+
+.controls__btn--up > i {
+  border-bottom: 8px solid $color-primary;
+  border-top: none
+}
+
+.controls__btn--disabled,
+.controls__btn--disabled:hover {
+  background: #fbfbfb;
+  color: #d5d5d5;
+  cursor: default;
+  > i {
+    border-bottom-color: #d5d5d5;
+    border-top-color: #d5d5d5;
+  }
+}

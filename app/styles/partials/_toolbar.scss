@@ -5,8 +5,7 @@
 ********************************************************/
 
 .toolbar {
-	background-color: #2770A0;
-//	border-bottom: 1px solid #E5E5E5;
+	background-color: $color-primary;
 	box-sizing: border-box;
 	color: #333;
 	height: $toolbar-height;

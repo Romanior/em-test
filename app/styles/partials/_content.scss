@@ -5,7 +5,17 @@
 ********************************************************/
 
 .content{
+  position: relative;
 	margin-left: $sub-content-width;
 	box-sizing: border-box;
-  margin-right: 80px;
+  -moz-transition: all $animation-length;
+  -webkit-transition: all $animation-length;
+  transition: all $animation-length;
+}
+
+.cnt-activate{
+  .content{
+    margin-left: 0;
+    margin-right: $details-width;
+  }
 }

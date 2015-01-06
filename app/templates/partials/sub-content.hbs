@@ -5,19 +5,9 @@
 }}
 
 <div class="sub-content">
+
   <div {{bind-attr class=':block-alone descriptive:block--highlighted'}}>
     {{input type="search" class="form-control" results=5 autosave="This week" name=yourSearch value=descriptive }}
-  </div>
-
-  <div class="block">
-    <div class="block__header">
-      <h3 class="block__title">Date Range</h3>
-    </div>
-    <div class="block__content">
-      {{filter-list
-        items=dateRangeFilters
-      }}
-    </div>
   </div>
 
   <div class="block">

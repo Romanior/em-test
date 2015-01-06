@@ -1,6 +1,7 @@
+import Ember from 'ember';
 import DS from 'ember-data';
 
-export default DS.Model.extend({
+export default DS.Model.extend(Ember.Copyable, {
   searchField: DS.attr('string'),
   status: DS.attr('string'),
   state: DS.attr('string'),
@@ -8,5 +9,6 @@ export default DS.Model.extend({
   organizer: DS.attr('raw'),
   organization: DS.attr('raw'),
   topics: DS.attr('raw')
+
 
 });
